@@ -17,4 +17,16 @@ public class Building {
     public Item[] getItems() {
         return items;
     }
+
+    public static int devide(int numri, int pjestusi) {
+        try {
+            return numri / pjestusi;
+        } catch (ArithmeticException error) {
+            System.out.println("Nuk mund te pjestohet me 0");
+            return 0;
+        } finally {
+            System.out.println("puna u mbarua");
+        }
+    }
+
 }
